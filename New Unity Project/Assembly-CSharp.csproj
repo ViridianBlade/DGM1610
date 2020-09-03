@@ -60,7 +60,6 @@
   <ItemGroup>
      <Compile Include="Assets\CameraMover.cs" />
      <Compile Include="Assets\CharacterMover.cs" />
-     <Compile Include="Assets\MoverScript.cs" />
      <Compile Include="Assets\PlayerHealth.cs" />
      <Compile Include="Assets\PlayerScore.cs" />
  <Reference Include="Unity.Timeline.Editor">
