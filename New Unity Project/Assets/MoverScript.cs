@@ -22,8 +22,8 @@ public class MoverScript : MonoBehaviour
         
 
         var vInput = speed * Input.GetAxis("Vertical") * Time.deltaTime;
-        var hInput = lookSensitivity * Input.GetAxis("Horizontal") * Time.deltaTime;
-        var movement = new Vector3(0,0, vInput);
+        var hInput = speed * Input.GetAxis("Horizontal") * Time.deltaTime;
+        var movement = new Vector3(hInput,0, vInput);
         
         
         var hLookInput = lookSensitivity * Input.GetAxis("Mouse X") * Time.deltaTime;
