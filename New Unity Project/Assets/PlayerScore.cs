@@ -8,7 +8,7 @@ public class PlayerScore : MonoBehaviour
 {
 
     public int score = 0;
-    public Text scoreDisplay;
+    Text scoreDisplay;
     
     // Start is called before the first frame update
     void Start()
