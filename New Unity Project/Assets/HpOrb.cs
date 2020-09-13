@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class HpOrb : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
+    private PlayerHealth playerHP;
     public int healAmount = 1;
+
+    void Start()
+    {
+        playerHP = GameObject.Find("Player1").GetComponent<PlayerHealth>();
+    }
     private void OnTriggerEnter(Collider other)
     {
-        playerHealth.HealPlayer(healAmount);
+        playerHP.updateHealth(healAmount);
     }
 }

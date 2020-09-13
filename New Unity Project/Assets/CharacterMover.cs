@@ -6,7 +6,6 @@ public class CharacterMover : MonoBehaviour
 {
     public float speed = 3f;
     public float lookSensitivity = 300f;
-    public int score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -37,4 +36,6 @@ public class CharacterMover : MonoBehaviour
     {
         transform.Translate(0, speed, 0);
     }
+
+
 }

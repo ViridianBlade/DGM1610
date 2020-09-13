@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     // Start is called before the first frame update
-
-    Text healthDisplay;
+    
     public int health = 3;
+    private Text healthDisplay;
     void Start()
     {
-        healthDisplay = GetComponent<Text>();
+        healthDisplay = GameObject.Find("Health Display").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -23,9 +23,9 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    public void HealPlayer(int hpGain)
+    public void updateHealth(int deltaHP)
     {
-        health += hpGain;
+        health += deltaHP;
         healthDisplay.text = "HP: " + health.ToString();
         
     }
